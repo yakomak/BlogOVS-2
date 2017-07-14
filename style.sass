@@ -78,6 +78,14 @@ ul.ovs-tabs
     li
         flex: 1
 
+.list-header
+    background: #ddd
+    height: 56px
+    margin-bottom: 5px
+    h2
+        text-align: center
+        line-height: 56px
+
 .padding64x320
     padding-bottom: 84px
 
@@ -121,6 +129,16 @@ ul.ovs-tabs
         display: none
     .uk-switcher > :not(.uk-active)
         display: list-item
+    .ovs-pages 
+        li
+            margin: 5px 5px 0
+
+@media only screen and (min-width: 900px)
+    .ovs-pages 
+        li:first-child
+            margin-left: 0
+        li:last-child
+            margin-right: 0
 
 
     // -------------пробуем--------------
