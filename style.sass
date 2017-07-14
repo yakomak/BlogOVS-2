@@ -72,6 +72,12 @@ ul.ovs-tabs
         // @media only screen and (max-width: 480px)
         display: none
 
+.ovs-pages
+    display: flex
+    flex-direction: row
+    li
+        flex: 1
+
 .padding64x320
     padding-bottom: 84px
 
@@ -113,6 +119,8 @@ ul.ovs-tabs
         padding-left: 0
     .ovs-main-tabbar
         display: none
+    .uk-switcher > :not(.uk-active)
+        display: list-item
 
 
     // -------------пробуем--------------

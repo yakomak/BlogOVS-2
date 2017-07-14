@@ -9195,6 +9195,12 @@ ul.ovs-tabs {
   ul.ovs-tabs .tab-caption {
     display: none; }
 
+.ovs-pages {
+  display: flex;
+  flex-direction: row; }
+  .ovs-pages li {
+    flex: 1; }
+
 .padding64x320 {
   padding-bottom: 84px; }
 
@@ -9235,4 +9241,6 @@ ul.ovs-tabs {
   .padding80x480 {
     padding-left: 0; }
   .ovs-main-tabbar {
-    display: none; } }
+    display: none; }
+  .uk-switcher > :not(.uk-active) {
+    display: list-item; } }
