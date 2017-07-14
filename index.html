@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+    <title>Блог ОВС</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+
+    <!-- jQuery is required -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <!-- 16 KB -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&subset=latin-ext');
+    </style>
+</head>
+
+<body>
+
+    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+
+                <li class="uk-active">
+                    <a href="#">
+                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span> Главная
+                    </a>
+                </li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">ЧаВо?</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-small uk-padding-remove">
+
+        <nav class="uk-navbar-container" uk-navbar uk-sticky>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">Блог ОВС</a>
+            </div>
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@s">
+                    <li class="uk-active">
+                        <a href="#">
+                            <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span> Главная
+                        </a>
+                    </li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">ЧаВо?</a></li>
+                </ul>
+
+                <a class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary"></a>
+
+            </div>
+        </nav>
+
+
+        <div class="fotorama uk-visible@m" data-nav="false">
+            <img src="/img-1.jpg">
+            <img src="/img-2.jpg">
+        </div>
+
+        <ul class="uk-flex uk-flex-column uk-switcher switcher-container padding64x320" id="ovs-pages" >
+            <li>
+                <ul class="uk-list uk-list-divider uk-margin-left uk-margin-right padding80x480">
+                    <li>
+                        <article class="uk-article">
+                            <p class="uk-article-meta uk-text-right">4 июля 2017</p>
+                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac
+                                facilisis in, egestas eget quam.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="uk-article">
+                            <p class="uk-article-meta uk-text-right">3 июля 2017</p>
+                            <p>Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="uk-article">
+                            <p class="uk-article-meta uk-text-right">1 июля 2017</p>
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </article>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="uk-list uk-list-divider uk-margin-left uk-margin-right padding80x480">
+                    <li>
+                        <article class="uk-article">
+                            <p class="uk-article-meta uk-text-right">4 июля 2017</p>
+                            <p>Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="uk-article">
+                            <p class="uk-article-meta uk-text-right">3 июля 2017</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="uk-article">
+                            <p class="uk-article-meta uk-text-right">1 июля 2017</p>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </article>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="ovs-main-tabbar">
+        <ul class="ovs-tabs" uk-switcher="connect: #ovs-pages">
+            <li class="ovs-active">
+                <a href="#"><i class="fa fa-bell-o fa-3x" aria-hidden="true"></i> <span class="tab-caption">Объявления</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-newspaper-o fa-3x" aria-hidden="true"></i> <span class="tab-caption">Новости</span></a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
