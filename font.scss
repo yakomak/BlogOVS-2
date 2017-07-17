@@ -1,0 +1,48 @@
+@function linear-interpolation($map) {
+  $keys: map-keys($map);
+  @if (length($keys) != 2) {
+    @error "linear-interpolation() $map must be exactly 2 values";
+  }
+  // The slope
+  $m: (map-get($map, nth($keys, 2)) - map-get($map, nth($keys, 1)))/(nth($keys, 2) - nth($keys,1));
+  
+  // The y-intercept
+  $b: map-get($map, nth($keys, 1)) - $m * nth($keys, 1);
+  
+  // Determine if the sign should be positive or negative
+  $sign: "+";
+  @if ($b < 0) {
+    $sign: "-";
+    $b: abs($b);
+  }
+  
+  @return calc(#{$m*100}vw #{$sign} #{$b});
+}
+
+html {
+  // Minimum font-size
+  font-size: 16px;
+  // Font-size between 576 - 768
+  @media (min-width:480px) {
+    $map: (480px: 16px, 640px: 18px);
+    font-size: linear-interpolation($map);
+  }
+  // Font-size between 768 - 992
+  @media (min-width:640px) {
+    $map: (640px: 18px, 960px: 20px);
+    font-size: linear-interpolation($map);
+  }
+  // Maximum font-size
+
+  @media (min-width:960px) {
+    font-size: 20px;
+  }
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}

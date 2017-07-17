@@ -9139,6 +9139,24 @@ td.uk-text-break {
   h3 {
     page-break-after: avoid; } }
 
+html {
+  font-size: 16px; }
+  @media (min-width: 480px) {
+    html {
+      font-size: calc(1.25vw + 10px); } }
+  @media (min-width: 640px) {
+    html {
+      font-size: calc(0.625vw + 14px); } }
+  @media (min-width: 960px) {
+    html {
+      font-size: 20px; } }
+
+p {
+  font-size: 1rem; }
+
+h2 {
+  font-size: 2rem; }
+
 .ovs-main-tabbar {
   background: #333;
   height: 64px;

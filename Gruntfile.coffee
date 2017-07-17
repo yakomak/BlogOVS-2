@@ -23,7 +23,7 @@ module.exports = (grunt) ->
 
     watch:
       sass:
-        files: ["style.sass"]
+        files: ["style.sass", "font.scss"]
         tasks: ["sass"]
         options:
           spawn: no
